@@ -30,6 +30,21 @@ const Services = () => {
           <ServiceCard key={service._id} service={service}></ServiceCard>
         ))}
       </div>
+      <div className="flex justify-center items-center">
+        <a
+          
+          className="relative px-5 py-3 overflow-hidden font-medium text-[#FF3811] bg-white border-2 border-[#FF3811] rounded-lg shadow-inner group"
+        >
+          <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-[#FF3811] group-hover:w-full ease"></span>
+          <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-[#FF3811] group-hover:w-full ease"></span>
+          <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-[#FF3811] group-hover:h-full ease"></span>
+          <span className="absolute bottom-0 left-0 w-full h-0 transition-all  duration-300 delay-200 bg-[#FF3811] group-hover:h-full ease"></span>
+          <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-[#FF3811] rounded-lg opacity-0 group-hover:opacity-100"></span>
+          <span className="relative transition-colors duration-300 delay-200 group-hover:text-white ease">
+          More Services
+          </span>
+        </a>
+      </div>
     </div>
   );
 };
