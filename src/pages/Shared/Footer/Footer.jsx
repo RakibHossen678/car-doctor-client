@@ -3,35 +3,32 @@ import logo from "../../../assets/logo.svg";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer p-10 bg-base-200 text-base-content">
+      <footer className="footer p-10 bg-base-200 text-base-content ">
+        <div></div>
         <aside>
-            <img src={logo} alt="" />
-         
+          <img src={logo} alt="" />
+
           <p>
-            ACME Industries Ltd.
-            <br />
-            Providing reliable tech since 1992
+            Edwin Diaz is a software and web technologies <br /> engineer, a
+            life coach trainer who is also a serial .
           </p>
         </aside>
         <nav>
-          <h6 className="footer-title">Services</h6>
-          <a className="link link-hover">Branding</a>
-          <a className="link link-hover">Design</a>
-          <a className="link link-hover">Marketing</a>
-          <a className="link link-hover">Advertisement</a>
+          <h6 className="footer-title">About</h6>
+          <a className="link link-hover">Home</a>
+          <a className="link link-hover">Services</a>
+          <a className="link link-hover">Contact</a>
         </nav>
         <nav>
           <h6 className="footer-title">Company</h6>
-          <a className="link link-hover">About us</a>
-          <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Jobs</a>
-          <a className="link link-hover">Press kit</a>
+          <a className="link link-hover">About </a>
+          <a className="link link-hover">Why car Doctor</a>
         </nav>
         <nav>
-          <h6 className="footer-title">Legal</h6>
-          <a className="link link-hover">Terms of use</a>
-          <a className="link link-hover">Privacy policy</a>
-          <a className="link link-hover">Cookie policy</a>
+          <h6 className="footer-title">Support</h6>
+          <a className="link link-hover">Support center</a>
+          <a className="link link-hover">Accesbility</a>
+          <a className="link link-hover">Feedback</a>
         </nav>
       </footer>
     </div>
