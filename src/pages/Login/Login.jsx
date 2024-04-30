@@ -4,10 +4,24 @@ import { FcGoogle } from "react-icons/fc";
 
 import loginImg from '../../assets/images/login/login.svg'
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Login = () => {
+    const {login}=useContext(AuthContext)
     const handleLogin=e=>{
         e.preventDefault()
+        const form=e.target
+        const email=form.email.value
+        const password=form.password.value
+        console.log(email,password)
+        login(email,password)
+        .then(result=>{
+            console.log(result.user)
+        })
+        .catch(error=>{
+            console.log(error)
+        })    
     }
   return (
     <div className="my-20 flex lg:flex-row flex-col justify-between items-center">
@@ -16,7 +30,7 @@ const Login = () => {
       </div>
       <div className="lg:w-1/2 w-full px-3 lg:px-0">
         <div className="w-full max-w-md p-8 space-y-3 rounded-xl border-2">
-          <h1 className="text-2xl font-bold text-center">Sing Up</h1>
+          <h1 className="text-2xl font-bold text-center">Sign In</h1>
           <form onSubmit={handleLogin}  className="space-y-6">
             <div className="space-y-1 text-sm">
               <label htmlFor="username" className="block text-black font-inter font-medium ">
@@ -44,7 +58,7 @@ const Login = () => {
               
             </div>
             <button type="submit" className="block w-full p-3 text-center rounded-sm text-white bg-[#FF3811]">
-            Sign up
+            Sign in
             </button>
           </form>
           <div className="flex items-center pt-4 space-x-1">

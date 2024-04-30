@@ -4,10 +4,25 @@ import { FcGoogle } from "react-icons/fc";
 
 import loginImg from "../../assets/images/login/login.svg";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const SingnUp = () => {
+    const {createUser}=useContext(AuthContext)
     const handleRegister=e=>{
         e.preventDefault()
+        const form=e.target
+        const name=form.name.value
+        const email=form.email.value
+        const password=form.password.value
+        console.log(name,password,email)
+        createUser(email,password)
+        .then(result=>{
+            console.log(result.user)
+        })
+        .catch(error=>{
+            console.log(error)
+        })
     }
   return (
     <div className="my-20 flex lg:flex-row flex-col justify-between items-center">
@@ -16,7 +31,7 @@ const SingnUp = () => {
       </div>
       <div className="lg:w-1/2 w-full px-3 lg:px-0">
         <div className="w-full max-w-md p-8 space-y-3 rounded-xl border-2">
-          <h1 className="text-2xl font-bold text-center">Login</h1>
+          <h1 className="text-2xl font-bold text-center">Sing Up</h1>
           <form onSubmit={handleRegister} className="space-y-6">
             <div className="space-y-1 text-sm">
               <label
@@ -67,13 +82,13 @@ const SingnUp = () => {
               type="submit"
               className="block w-full p-3 text-center rounded-sm text-white bg-[#FF3811]"
             >
-              Sign In
+              Sign Up
             </button>
           </form>
           <div className="flex items-center pt-4 space-x-1">
             <div className="flex-1 h-px sm:w-16 bg-gray-700"></div>
             <p className="px-3 text-sm text-[#444444] font-inter ">
-              Or Sign In with
+              Or Sign up with
             </p>
             <div className="flex-1 h-px sm:w-16 bg-gray-700"></div>
           </div>
