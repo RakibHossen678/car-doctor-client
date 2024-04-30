@@ -1,0 +1,158 @@
+[
+  {
+    "_id": "635a0c0b64a6d231228942ae",
+    "service_id": "04",
+    "title": "Engine Oil Change",
+    "img": "https://i.ibb.co/T2cpBd5/888.jpg",
+    "price": "20.00",
+    "description": "Ensure your engine stays healthy and lubricated with our Engine Oil Change service. Regular oil changes are essential for maintaining optimal engine performance and longevity. Trust our skilled technicians to provide top-quality service and keep your vehicle running smoothly.",
+    "facility": [
+      {
+        "name": "Instant Car Services",
+        "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+      },
+      {
+        "name": "24/7 Quality Service",
+        "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+      },
+      {
+        "name": "Easy Customer Service",
+        "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+      },
+      {
+        "name": "Quality Cost Service",
+        "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+      }
+    ]
+  },
+  {
+    "_id": "635a0c0b64a6d231228942af",
+    "service_id": "05",
+    "title": "Battery Charge",
+    "img": "https://i.ibb.co/ydCbDN3/5555.jpg",
+    "price": "20.00",
+    "description": "Keep your vehicle powered up and ready to go with our Battery Charge service. Whether you're experiencing difficulty starting your car or just need a routine check-up, our expert team will ensure your battery is in peak condition, providing reliable performance when you need it most.",
+    "facility": [
+      {
+        "name": "Instant Car Services",
+        "details": "Get immediate assistance with our Instant Car Services. Our dedicated team is always ready to provide prompt and efficient solutions to your automotive needs, ensuring minimal downtime for your vehicle."
+      },
+      {
+        "name": "24/7 Quality Service",
+        "details": "Experience top-notch service around the clock with our 24/7 Quality Service. Whether it's day or night, you can count on our team to deliver exceptional automotive care with professionalism and expertise."
+      },
+      {
+        "name": "Easy Customer Service",
+        "details": "Enjoy hassle-free assistance with our Easy Customer Service. We prioritize customer satisfaction and strive to make every interaction convenient and straightforward, ensuring a smooth and pleasant experience for all our clients."
+      },
+      {
+        "name": "Quality Cost Service",
+        "details": "Experience quality service at an affordable cost with our Quality Cost Service. We believe in providing value-driven solutions without compromising on the quality of our workmanship or materials, ensuring you get the best possible service at a competitive price."
+      }
+    ]
+  },
+  {
+    "_id": "635b591a1dafe382a9da8c96",
+    "service_id": "01",
+    "title": "Full car Repair",
+    "img": "https://i.ibb.co/R6Z2nFM/55.jpg",
+    "price": "200.00",
+    "description": "Experience comprehensive car repair solutions with our Full Car Repair service. From minor fixes to major overhauls, our experienced technicians have the expertise and resources to address any issue with your vehicle. Trust us to get you back on the road safely and efficiently.",
+    "facility": [
+      {
+        "name": "Instant Car Services",
+        "details": "Get immediate assistance with our Instant Car Services. Our dedicated team is always ready to provide prompt and efficient solutions to your automotive needs, ensuring minimal downtime for your vehicle."
+      },
+      {
+        "name": "24/7 Quality Service",
+        "details": "Experience top-notch service around the clock with our 24/7 Quality Service. Whether it's day or night, you can count on our team to deliver exceptional automotive care with professionalism and expertise."
+      },
+      {
+        "name": "Easy Customer Service",
+        "details": "Enjoy hassle-free assistance with our Easy Customer Service. We prioritize customer satisfaction and strive to make every interaction convenient and straightforward, ensuring a smooth and pleasant experience for all our clients."
+      },
+      {
+        "name": "Quality Cost Service",
+        "details": "Experience quality service at an affordable cost with our Quality Cost Service. We believe in providing value-driven solutions without compromising on the quality of our workmanship or materials, ensuring you get the best possible service at a competitive price."
+      }
+    ]
+  },
+  {
+    "_id": "635b5afc1dafe382a9da8c98",
+    "service_id": "02",
+    "title": "Engine Repair",
+    "img": "https://i.ibb.co/5MvmD2g/88.jpg",
+    "price": "150.00",
+    "description": "Restore your engine's performance and efficiency with our Engine Repair service. Whether you're dealing with strange noises, decreased power, or other issues, our skilled mechanics will diagnose and fix the problem promptly, ensuring your engine runs smoothly for miles to come.",
+    "facility": [
+      {
+        "name": "Instant Car Services",
+        "details": "Get immediate assistance with our Instant Car Services. Our dedicated team is always ready to provide prompt and efficient solutions to your automotive needs, ensuring minimal downtime for your vehicle."
+      },
+      {
+        "name": "24/7 Quality Service",
+        "details": "Experience top-notch service around the clock with our 24/7 Quality Service. Whether it's day or night, you can count on our team to deliver exceptional automotive care with professionalism and expertise."
+      },
+      {
+        "name": "Easy Customer Service",
+        "details": "Enjoy hassle-free assistance with our Easy Customer Service. We prioritize customer satisfaction and strive to make every interaction convenient and straightforward, ensuring a smooth and pleasant experience for all our clients."
+      },
+      {
+        "name": "Quality Cost Service",
+        "details": "Experience quality service at an affordable cost with our Quality Cost Service. We believe in providing value-driven solutions without compromising on the quality of our workmanship or materials, ensuring you get the best possible service at a competitive price."
+      }
+    ]
+  },
+  {
+    "_id": "635b5b691dafe382a9da8c99",
+    "service_id": "03",
+    "title": "Automatic Services",
+    "img": "https://i.ibb.co/wh7t3N3/555.jpg",
+    "price": "30.00",
+    "description": "Optimize your vehicle's automatic system with our Automatic Services. From transmission maintenance to diagnostics and repairs, our team specializes in keeping your automatic system running smoothly. Trust us to maintain the integrity and functionality of your vehicle's crucial components.",
+    "facility": [
+      {
+        "name": "Instant Car Services",
+        "details": "Get immediate assistance with our Instant Car Services. Our dedicated team is always ready to provide prompt and efficient solutions to your automotive needs, ensuring minimal downtime for your vehicle."
+      },
+      {
+        "name": "24/7 Quality Service",
+        "details": "Experience top-notch service around the clock with our 24/7 Quality Service. Whether it's day or night, you can count on our team to deliver exceptional automotive care with professionalism and expertise."
+      },
+      {
+        "name": "Easy Customer Service",
+        "details": "Enjoy hassle-free assistance with our Easy Customer Service. We prioritize customer satisfaction and strive to make every interaction convenient and straightforward, ensuring a smooth and pleasant experience for all our clients."
+      },
+      {
+        "name": "Quality Cost Service",
+        "details": "Experience quality service at an affordable cost with our Quality Cost Service. We believe in providing value-driven solutions without compromising on the quality of our workmanship or materials, ensuring you get the best possible service at a competitive price."
+      }
+    ]
+  },
+  {
+    "_id": "635b5ba51dafe382a9da8c9a",
+    "service_id": "06",
+    "title": "Electrical System",
+    "img": "https://i.ibb.co/KzCG8qr/8888.jpg",
+    "price": "20.00",
+    "description": "Ensure the reliability of your vehicle's electrical system with our Electrical System service. From wiring issues to battery problems, our technicians have the expertise to diagnose and repair electrical issues efficiently. Trust us to keep your vehicle's electrical components functioning at their best.",
+    "facility": [
+      {
+        "name": "Instant Car Services",
+        "details": "Get immediate assistance with our Instant Car Services. Our dedicated team is always ready to provide prompt and efficient solutions to your automotive needs, ensuring minimal downtime for your vehicle."
+      },
+      {
+        "name": "24/7 Quality Service",
+        "details": "Experience top-notch service around the clock with our 24/7 Quality Service. Whether it's day or night, you can count on our team to deliver exceptional automotive care with professionalism and expertise."
+      },
+      {
+        "name": "Easy Customer Service",
+        "details": "Enjoy hassle-free assistance with our Easy Customer Service. We prioritize customer satisfaction and strive to make every interaction convenient and straightforward, ensuring a smooth and pleasant experience for all our clients."
+      },
+      {
+        "name": "Quality Cost Service",
+        "details": "Experience quality service at an affordable cost with our Quality Cost Service. We believe in providing value-driven solutions without compromising on the quality of our workmanship or materials, ensuring you get the best possible service at a competitive price."
+      }
+    ]
+  }
+]

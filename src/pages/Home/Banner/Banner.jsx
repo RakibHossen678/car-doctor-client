@@ -6,15 +6,15 @@ import img4 from "../../../assets/images/homeCarousel/4.jpg";
 
 const Banner = () => {
   return (
-    <div className="carousel w-full max-h-[600px] my-2">
+    <div className="carousel w-full min-h-[600px] lg:max-h-[600px] my-2">
       <div id="slide1" className="carousel-item relative w-full">
         <img
           src={img1}
-          className="w-full z-1  rounded-lg bg-cover bg-center object-cover"
+          className="w-full   rounded-lg bg-cover bg-center object-cover"
         />
         <div className="absolute overflow-hidden rounded-lg h-full w-full bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0) 100%)]    text-white flex flex-col justify-center  ">
-          <div className="w-[460px] absolute transform -translate-y-1/2 top-1/2 left-32">
-            <h1 className="text-6xl font-inter font-semibold leading-[70px]">
+          <div className="lg:w-[460px] w-[400px] absolute transform -translate-y-1/2 top-1/2 lg:left-32 left-2">
+            <h1 className="lg:text-6xl text-4xl font-inter font-semibold lg:leading-[70px]">
               Affordable Price For Car Servicing
             </h1>
             <p className="font-inter py-5">
@@ -60,8 +60,8 @@ const Banner = () => {
           className="w-full rounded-lg bg-cover bg-center object-cover"
         />
         <div className="absolute overflow-hidden rounded-lg h-full w-full bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0) 100%)]    text-white flex flex-col justify-center  ">
-          <div className="w-[460px] absolute transform -translate-y-1/2 top-1/2 left-32">
-            <h1 className="text-6xl font-inter font-semibold leading-[70px]">
+        <div className="lg:w-[460px] w-[400px] absolute transform -translate-y-1/2 top-1/2 lg:left-32 left-2">
+            <h1 className="lg:text-6xl text-4xl font-inter font-semibold lg:leading-[70px]">
               Affordable Price For Car Servicing
             </h1>
             <p className="font-inter py-5">
@@ -107,8 +107,8 @@ const Banner = () => {
           className="w-full rounded-lg bg-cover bg-center object-cover"
         />
         <div className="absolute overflow-hidden rounded-lg h-full w-full bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0) 100%)]    text-white flex flex-col justify-center  ">
-          <div className="w-[460px] absolute transform -translate-y-1/2 top-1/2 left-32">
-            <h1 className="text-6xl font-inter font-semibold leading-[70px]">
+        <div className="lg:w-[460px] w-[400px] absolute transform -translate-y-1/2 top-1/2 lg:left-32 left-2">
+            <h1 className="lg:text-6xl text-4xl font-inter font-semibold lg:leading-[70px]">
               Affordable Price For Car Servicing
             </h1>
             <p className="font-inter py-5">
@@ -154,8 +154,8 @@ const Banner = () => {
           className="w-full  overflow-hidden rounded-lg bg-cover bg-center object-cover"
         />
         <div className="absolute overflow-hidden rounded-lg h-full w-full bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0) 100%)]    text-white flex flex-col justify-center  ">
-          <div className="w-[460px] absolute transform -translate-y-1/2 top-1/2 left-32">
-            <h1 className="text-6xl font-inter font-semibold leading-[70px]">
+        <div className="lg:w-[460px] w-[400px] absolute transform -translate-y-1/2 top-1/2 lg:left-32 left-2">
+            <h1 className="lg:text-6xl text-4xl font-inter font-semibold lg:leading-[70px]">
               Affordable Price For Car Servicing
             </h1>
             <p className="font-inter py-5">
