@@ -6,6 +6,7 @@ import loginImg from "../../assets/images/login/login.svg";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
+import Swal from "sweetalert2";
 
 const SingnUp = () => {
     const {createUser}=useContext(AuthContext)
@@ -19,6 +20,11 @@ const SingnUp = () => {
         createUser(email,password)
         .then(result=>{
             console.log(result.user)
+            Swal.fire({
+              title: "Success!",
+              text: "User Created Successfully",
+              icon: "success"
+            });
         })
         .catch(error=>{
             console.log(error)
