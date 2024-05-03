@@ -28,7 +28,7 @@ const Navbar = () => {
         <Link>Services</Link>
       </li>
       <li className=" font-inter font-semibold">
-        <Link>Blog</Link>
+        <Link to='/bookings'>My Bookings</Link>
       </li>
       <li className=" font-inter font-semibold">
         <Link>Contact</Link>

@@ -14,9 +14,11 @@ const AuthProvider = ({children}) => {
         return createUserWithEmailAndPassword(auth,email,password)
     }
     const login=(email,password)=>{
+        setLoading(false)
         return signInWithEmailAndPassword(auth,email,password)
     }
     const logOut=()=>{
+        setLoading(false)
         signOut(auth)
     }
     useEffect(()=>{
