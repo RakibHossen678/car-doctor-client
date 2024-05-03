@@ -1,6 +1,6 @@
 import Swal from "sweetalert2";
 
-const BookingRow = ({ booking ,handeleDelete}) => {
+const BookingRow = ({ booking, handeleDelete, handleUpdate  }) => {
   console.log(booking);
   const {
     _id,
@@ -11,8 +11,9 @@ const BookingRow = ({ booking ,handeleDelete}) => {
     service,
     service_id,
     service_img,
+    status
   } = booking;
- 
+console.log(booking)
   return (
     <tr>
       <th>
@@ -44,7 +45,20 @@ const BookingRow = ({ booking ,handeleDelete}) => {
       <td>{email}</td>
       <td>${price}</td>
       <th>
-        <button className="btn btn-ghost btn-xs">Confirm</button>
+        {status === "confirm" ? (
+          <button className="px-5  py-2.5 hover:py-3 relative rounded group overflow-hidden font-medium bg-transparent border-2  hover:border-none inline-block">
+            <span className="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-[#FF3811] group-hover:h-full opacity-90"></span>
+            <span className="relative group-hover:text-white">Confirmed</span>
+          </button>
+        ) : (
+          <button
+            onClick={() => handleUpdate(_id)}
+            className="px-5  py-2.5 hover:py-3 relative rounded group overflow-hidden font-medium bg-transparent border-2  hover:border-none inline-block"
+          >
+            <span className="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-[#FF3811] group-hover:h-full opacity-90"></span>
+            <span className="relative group-hover:text-white">Confirm</span>
+          </button>
+        )}
       </th>
     </tr>
   );
