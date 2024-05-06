@@ -4,15 +4,17 @@ import { FcGoogle } from "react-icons/fc";
 
 import loginImg from "../../assets/images/login/login.svg";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useContext } from "react";
-import { AuthContext } from "../../Provider/AuthProvider";
+
 import Swal from "sweetalert2";
+import useAuth from "../../Hooks/useAuth";
+// import axios from "axios";
 
 const Login = () => {
-  const { login } = useContext(AuthContext);
-  const location=useLocation()
-  console.log(location)
-  const navigate=useNavigate()
+  
+  const {login}=useAuth()
+  const location = useLocation();
+  console.log(location);
+  const navigate = useNavigate();
   const handleLogin = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -21,13 +23,24 @@ const Login = () => {
     console.log(email, password);
     login(email, password)
       .then((result) => {
-        console.log(result.user);
+        const loggedInUser = result.user;
+        console.log(loggedInUser);
+        // const user = { email };
         Swal.fire({
           title: "Success!",
           text: "User logged in Successfully",
           icon: "success",
         });
-        navigate(location?.state)
+        navigate(location?.state);
+        //get access token
+        // axios
+        //   .post("http://localhost:5000/jwt", user, { withCredentials: true })
+        //   .then((res) => {
+        //     console.log(res.data);
+        //     if (res.data.success) {
+        //
+        //     }
+        //   });
       })
       .catch((error) => {
         console.log(error);

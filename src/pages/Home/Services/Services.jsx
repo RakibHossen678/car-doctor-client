@@ -1,16 +1,10 @@
-import { useState } from "react";
-import { useEffect } from "react";
+
 import ServiceCard from "./ServiceCard";
+import useService from "../../../Hooks/useService";
 
 const Services = () => {
-  const [services, setServices] = useState([]);
-  useEffect(() => {
-    fetch("http://localhost:5000/services")
-      .then((res) => res.json())
-      .then((data) => {
-        setServices(data);
-      });
-  }, []);
+ 
+  const services=useService()
   return (
     <div className="mb-20 mt-40">
       <div className="flex justify-center text-center items-center flex-col">

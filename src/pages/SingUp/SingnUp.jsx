@@ -4,32 +4,32 @@ import { FcGoogle } from "react-icons/fc";
 
 import loginImg from "../../assets/images/login/login.svg";
 import { Link } from "react-router-dom";
-import { useContext } from "react";
-import { AuthContext } from "../../Provider/AuthProvider";
+
 import Swal from "sweetalert2";
+import useAuth from "../../Hooks/useAuth";
 
 const SingnUp = () => {
-    const {createUser}=useContext(AuthContext)
-    const handleRegister=e=>{
-        e.preventDefault()
-        const form=e.target
-        const name=form.name.value
-        const email=form.email.value
-        const password=form.password.value
-        console.log(name,password,email)
-        createUser(email,password)
-        .then(result=>{
-            console.log(result.user)
-            Swal.fire({
-              title: "Success!",
-              text: "User Created Successfully",
-              icon: "success"
-            });
-        })
-        .catch(error=>{
-            console.log(error)
-        })
-    }
+  const { createUser } = useAuth();
+  const handleRegister = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const name = form.name.value;
+    const email = form.email.value;
+    const password = form.password.value;
+    console.log(name, password, email);
+    createUser(email, password)
+      .then((result) => {
+        console.log(result.user);
+        Swal.fire({
+          title: "Success!",
+          text: "User Created Successfully",
+          icon: "success",
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
   return (
     <div className="my-20 flex lg:flex-row flex-col justify-between items-center">
       <div className="lg:w-1/2">
@@ -111,7 +111,9 @@ const SingnUp = () => {
           </div>
           <p className="text-xs text-center sm:px-6 text-[#444444] font-inter font-medium">
             Already have an account?
-            <Link to='/login' className="underline text-[#FF3811] ">Login</Link>
+            <Link to="/login" className="underline text-[#FF3811] ">
+              Login
+            </Link>
           </p>
         </div>
       </div>

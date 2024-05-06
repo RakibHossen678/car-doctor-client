@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import logo from "../../../assets/logo.svg";
 import { IoBagHandleOutline, IoSearch } from "react-icons/io5";
-import { useContext } from "react";
-import { AuthContext } from "../../../Provider/AuthProvider";
+
+import useAuth from "../../../Hooks/useAuth";
 
 const Navbar = () => {
-  const { user, logOut } = useContext(AuthContext);
+  const { user, logOut } = useAuth();
   const singOut = () => {
     logOut()
       .then((result) => {
@@ -28,7 +28,7 @@ const Navbar = () => {
         <Link>Services</Link>
       </li>
       <li className=" font-inter font-semibold">
-        <Link to='/bookings'>My Bookings</Link>
+        <Link to="/bookings">My Bookings</Link>
       </li>
       <li className=" font-inter font-semibold">
         <Link>Contact</Link>
@@ -104,7 +104,10 @@ const Navbar = () => {
             </ul>
           </div>
         ) : (
-          <Link to='/login' className="rounded-md ml-4 px-3.5 py-2 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-[#FF3811]  text-white">
+          <Link
+            to="/login"
+            className="rounded-md ml-4 px-3.5 py-2 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-[#FF3811]  text-white"
+          >
             <span className="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-[#FF3811] top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
             <span className="relative text-[#FF3811] transition duration-300 group-hover:text-white ease">
               Login

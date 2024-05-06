@@ -10,7 +10,7 @@ const PrivateRoute = ({ children }) => {
   console.log(location)
   if (loading) {
     return (
-      <div className="w-44">
+      <div className="w-28">
         <Lottie animationData={loadingImg}></Lottie>
       </div>
     );
